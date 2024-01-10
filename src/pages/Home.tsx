@@ -1,14 +1,15 @@
 import { FC } from "react";
+import Header from "../components/Header";
+import ProductList from "../components/ProductList";
 
 interface Iprops {}
 
 const Home: FC<Iprops> = ({}) => {
   return (
     <>
-      <div className=" container p-4">
-        <div className=" flex gap-1 ">
-          <p>hello world in here </p>
-        </div>
+      <div className=" container p-4 mx-auto">
+        <Header />
+        <ProductList />
       </div>
     </>
   );

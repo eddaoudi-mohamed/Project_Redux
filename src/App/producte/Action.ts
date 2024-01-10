@@ -4,19 +4,21 @@ import {
   SET_PORTDUCTS,
 } from "./TypeAction";
 
-const setProducts = () => {
+export const setProducts = (products: any) => {
   return {
     type: SET_PORTDUCTS,
+    payload: products,
   };
 };
 
-const selectProducts = () => {
+export const selectProduct = (product: any) => {
   return {
     type: SELECT_PRODUCTS,
+    payload: product,
   };
 };
 
-const removeSelectProduct = () => {
+export const removeSelectProduct = () => {
   return {
     type: REMOVE_SELECT_PRODUCTS,
   };
